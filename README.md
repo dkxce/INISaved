@@ -11,6 +11,15 @@ based on XMLSerializer, xml serialized object as xml converts to ini and back.
 using  System.Xml;
 
 ...
+public class Config: INISaved<Config>
+{
+  public string name;
+  public int intval;
+  public byte[] data;
+  public SubClass sub;
+  public bool boolval;
+}
+...
 
 Config cfg_save = new Config();
 IniSaved<Config>.Save(Path.Combine(IniSaved<int>.CurrentDirectory(), "Config.ini"), cfg_save);
