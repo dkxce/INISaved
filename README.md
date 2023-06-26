@@ -29,8 +29,8 @@ Config cfg_load = IniSaved<Config>.Load(Path.Combine(IniSaved<int>.CurrentDirect
 ;
 
 [Configuration]
-WebUrl=http://localhost:7177/index.html
-WebPort=7177
+WebUrl=http://localhost:8081/index.html
+WebPort=8081
 FormAllowMaximize=true
 FormAllowMinimize=true
 FormKeepWinPos=true
