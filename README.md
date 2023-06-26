@@ -1,9 +1,10 @@
 # INISaved
 
-INI Serializer Object <--> INI File
-Supports ; & # 
+**INI Serializer**
 
-using XMLSerializer, then xml text converts to ini and back.
+Object <--> INI File    
+
+based on XMLSerializer, xml serialized object as xml converts to ini and back.
 
 **Usage**:
 ```C#
