@@ -6,8 +6,8 @@
 ;
 
 [Configuration]
-WebUrl=http://localhost:7177/index.html
-WebPort=7177
+WebUrl=http://localhost:8081/index.html
+WebPort=8081
 FormAllowMaximize=true
 FormAllowMinimize=true
 FormKeepWinPos=true
