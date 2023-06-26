@@ -18,3 +18,30 @@ Config cfg_load = IniSaved<Config>.Load(Path.Combine(IniSaved<int>.CurrentDirect
 
 ...
 ```
+
+**Sample**:
+```ini
+﻿;
+;IniSaved File UTF-8
+;[section]
+;@attr|param=value
+;@ -> \u0040, ; -> \u003B, # -> \u0023, \r -> \u000D, \n -> \u000A
+;
+
+[Configuration]
+WebUrl=http://localhost:7177/index.html
+WebPort=7177
+FormAllowMaximize=true
+FormAllowMinimize=true
+FormKeepWinPos=true
+FormShowStatus=false
+FormEnableLog=true
+FormShowWaitBox=true
+FormShowProgress=false
+FormTaskProgress=true
+FormMode=Dark
+ShowMaximized=true
+ServerBaseURL=https://localhost/api/
+HighDPIMode=true
+CustomCaption=1
+```
