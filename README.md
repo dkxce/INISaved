@@ -46,12 +46,12 @@ using  System.Xml;
 ;
 
 [Config]
-name=NAME
-intval=100
+name=Config public string name
+intval=10128
 data=Af8=
 boolval=false
 
 [Config.sub]
-@key=K
-@=V
+@key=SubConfig public string key
+@=SubConfig public string value
 ```
