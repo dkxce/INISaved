@@ -366,11 +366,11 @@ namespace System.Xml
 
         public static string NormalizeValue(string value, bool name = false)
         {
-            if(name) value = value.Replace("@", "\\u0040");
+            if (name) value = value.Replace("@", "\\u0040");
             value = value.Replace(";", "\\u003B");
             value = value.Replace("#", "\\u0023");
-            value = value.Replace("\\r", "\\u000D");
-            value = value.Replace("\\n", "\\u000A");
+            value = value.Replace("\r", "\\u000D");
+            value = value.Replace("\n", "\\u000A");
             return value;
         }
 
@@ -379,8 +379,8 @@ namespace System.Xml
             if (name) value = value.Replace("\\u0040", "@");
             value = value.Replace("\\u003B", ";");
             value = value.Replace("\\u0023", "#");
-            value = value.Replace("\\u000D", "\\r");
-            value = value.Replace("\\u000A", "\\n");
+            value = value.Replace("\\u000D", "\r");
+            value = value.Replace("\\u000A", "\n");
             return value;
         }
     }    
