@@ -23,7 +23,7 @@ namespace System.Xml
     public class IniSaved<T>
     {
         public static bool presaveFileHeader = true;
-        public static bool presaveXmlSerialization = true;
+        public static bool presaveXmlSerialization = false;
         public static string customHeaderLine = null;
 
         #region SAVE
