@@ -35,7 +35,7 @@ namespace Test
 }
 ```
 
-**Short Sample**:
+**Short INI Sample**:
 ```ini
 ;
 ;IniSaved File UTF-8
