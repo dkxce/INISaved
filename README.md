@@ -8,25 +8,31 @@ based on XMLSerializer, xml serialized object as xml converts to ini and back.
 
 **Usage**:
 ```C#
-using  System.Xml;
+using System;
+using System.Xml;
 
-...
-    // Write CONFIG
+namespace Test
+{
+    internal class Program
     {
-        IniSaved<System.Xml.IniSavedSample.SampleConfig>.presaveFileHeader = true;
-        IniSaved<System.Xml.IniSavedSample.SampleConfig>.presaveXmlSerialization = false;                
-        IniSaved<System.Xml.IniSavedSample.SampleConfig>.customHeaderLine = "Original at https://github.com/dkxce/INISaved";                
-        System.Xml.IniSavedSample.SampleConfig CONFIG = new System.Xml.IniSavedSample.SampleConfig();
-        string iniData = IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save(CONFIG);
-        IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save("sample.ini", CONFIG);
-    };
+        static void Main()
+        {
+            // Write
+            {
+                System.Xml.IniSavedSample.SampleConfig CONFIG = new System.Xml.IniSavedSample.SampleConfig();
+                string iniData = IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save(CONFIG);
+                IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save("sample.ini", CONFIG);
+                Console.WriteLine(iniData);
+            };
 
-    // Read CONFIG
-    {
-        System.Xml.IniSavedSampleBlank.SampleConfig CONFIG = new System.Xml.IniSavedSampleBlank.SampleConfig();
-        CONFIG = IniSaved<System.Xml.IniSavedSampleBlank.SampleConfig>.Load("sample.ini");
-    };
-...
+            // Read CONFIG
+            {
+                System.Xml.IniSavedSampleBlank.SampleConfig CONFIG = new System.Xml.IniSavedSampleBlank.SampleConfig();
+                CONFIG = IniSaved<System.Xml.IniSavedSampleBlank.SampleConfig>.Load("sample.ini");
+            };
+        }
+    }
+}
 ```
 
 **Short Sample**:
