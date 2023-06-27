@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SampleConfig>
+  <Name>SampleConfiguration</Name>
+  <Age>18</Age>
+  <BirthDay>2023-06-27T00:00:00+03:00</BirthDay>
+  <Weight>101</Weight>
+  <Length>777</Length>
+  <Man>true</Man>
+  <aBytes>ARD/Cg3NOyM=</aBytes>
+  <aDoubles>
+    <double>11</double>
+    <double>22</double>
+    <double>33</double>
+    <double>44</double>
+    <double>55</double>
+    <double>66</double>
+    <double>77</double>
+  </aDoubles>
+  <aInts>
+    <int>101</int>
+    <int>202</int>
+    <int>303</int>
+    <int>404</int>
+    <int>505</int>
+    <int>606</int>
+    <int>707</int>
+  </aInts>
+  <aSubSampleConfigs>
+    <SubSampleConfig key="kname" comment="com">vval<FloatDict><DictionaryEntry><Key xmlns:q1="http://www.w3.org/2001/XMLSchema" d6p1:type="q1:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictA</Key><Value xmlns:q2="http://www.w3.org/2001/XMLSchema" d6p1:type="q2:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">11</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q3="http://www.w3.org/2001/XMLSchema" d6p1:type="q3:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictB</Key><Value xmlns:q4="http://www.w3.org/2001/XMLSchema" d6p1:type="q4:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">22</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q5="http://www.w3.org/2001/XMLSchema" d6p1:type="q5:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictC</Key><Value xmlns:q6="http://www.w3.org/2001/XMLSchema" d6p1:type="q6:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">33</Value></DictionaryEntry></FloatDict></SubSampleConfig>
+    <SubSampleConfig key="movek" comment="fav">loop<FloatDict><DictionaryEntry><Key xmlns:q7="http://www.w3.org/2001/XMLSchema" d6p1:type="q7:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictA</Key><Value xmlns:q8="http://www.w3.org/2001/XMLSchema" d6p1:type="q8:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">11</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q9="http://www.w3.org/2001/XMLSchema" d6p1:type="q9:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictB</Key><Value xmlns:q10="http://www.w3.org/2001/XMLSchema" d6p1:type="q10:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">22</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q11="http://www.w3.org/2001/XMLSchema" d6p1:type="q11:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictC</Key><Value xmlns:q12="http://www.w3.org/2001/XMLSchema" d6p1:type="q12:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">33</Value></DictionaryEntry></FloatDict></SubSampleConfig>
+    <SubSampleConfig key="emank" comment="moc">lavv<FloatDict><DictionaryEntry><Key xmlns:q13="http://www.w3.org/2001/XMLSchema" d6p1:type="q13:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictA</Key><Value xmlns:q14="http://www.w3.org/2001/XMLSchema" d6p1:type="q14:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">11</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q15="http://www.w3.org/2001/XMLSchema" d6p1:type="q15:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictB</Key><Value xmlns:q16="http://www.w3.org/2001/XMLSchema" d6p1:type="q16:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">22</Value></DictionaryEntry><DictionaryEntry><Key xmlns:q17="http://www.w3.org/2001/XMLSchema" d6p1:type="q17:string" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">FloatDictSictC</Key><Value xmlns:q18="http://www.w3.org/2001/XMLSchema" d6p1:type="q18:float" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">33</Value></DictionaryEntry></FloatDict></SubSampleConfig>
+  </aSubSampleConfigs>
+  <lStrings>
+    <string>s1</string>
+    <string>s2</string>
+    <string>s3</string>
+    <string>s4</string>
+  </lStrings>
+  <lInts>
+    <int>255</int>
+    <int>32767</int>
+    <int>65535</int>
+  </lInts>
+  <lSubSampleRecords>
+    <SubSampleRecord person="Unknown" mail="noMail" web="http://" />
+  </lSubSampleRecords>
+  <IntDict>
+    <DictionaryEntry>
+      <Key xmlns:q19="http://www.w3.org/2001/XMLSchema" d4p1:type="q19:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">IntDict_A</Key>
+      <Value xmlns:q20="http://www.w3.org/2001/XMLSchema" d4p1:type="q20:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">-101</Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xmlns:q21="http://www.w3.org/2001/XMLSchema" d4p1:type="q21:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">IntDict_B</Key>
+      <Value xmlns:q22="http://www.w3.org/2001/XMLSchema" d4p1:type="q22:int" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">-2022</Value>
+    </DictionaryEntry>
+  </IntDict>
+  <StringDict>
+    <DictionaryEntry>
+      <Key xmlns:q23="http://www.w3.org/2001/XMLSchema" d4p1:type="q23:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">StringDict_C</Key>
+      <Value xmlns:q24="http://www.w3.org/2001/XMLSchema" d4p1:type="q24:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">s1088</Value>
+    </DictionaryEntry>
+    <DictionaryEntry>
+      <Key xmlns:q25="http://www.w3.org/2001/XMLSchema" d4p1:type="q25:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">StringDict_D</Key>
+      <Value xmlns:q26="http://www.w3.org/2001/XMLSchema" d4p1:type="q26:string" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">s2088</Value>
+    </DictionaryEntry>
+  </StringDict>
+</SampleConfig>
