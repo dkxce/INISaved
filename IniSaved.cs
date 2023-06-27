@@ -265,7 +265,7 @@ namespace System.Xml
                 secSorted = new List<KeyValuePair<string, List<string>>>(sections);
                 secSorted.Sort(new CustomComparer());
                 // REPLACE ROOT
-                if (secSorted.Count > 0 && !string.IsNullOrEmpty(section) && !string.IsNullOrEmpty(xmlbase))
+                if (secSorted.Count > 0 && !string.IsNullOrEmpty(section) && !string.IsNullOrEmpty(xmlbase) && section != xmlbase)
                 {
                     List<KeyValuePair<string, List<string>>> tmps = new List<KeyValuePair<string, List<string>>>();
                     foreach (KeyValuePair<string, List<string>> kvp in secSorted)
