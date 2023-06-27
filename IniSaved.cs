@@ -263,7 +263,7 @@ namespace System.Xml
                 };
                 // SORT
                 secSorted = new List<KeyValuePair<string, List<string>>>(sections);
-                //secSorted.Sort(new CustomComparer());
+                secSorted.Sort(new CustomComparer());
                 // REPLACE ROOT
                 if (secSorted.Count > 0 && !string.IsNullOrEmpty(section) && !string.IsNullOrEmpty(xmlbase))
                 {
