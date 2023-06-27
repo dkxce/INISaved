@@ -11,47 +11,45 @@ based on XMLSerializer, xml serialized object as xml converts to ini and back.
 using  System.Xml;
 
 ...
-    public class Config
+    // Write CONFIG
     {
-        public string name;
-        public int intval;
-        public byte[] data;
-        public bool boolval;
-        public SubConfig sub;
-    }
+        IniSaved<System.Xml.IniSavedSample.SampleConfig>.presaveFileHeader = true;
+        IniSaved<System.Xml.IniSavedSample.SampleConfig>.presaveXmlSerialization = false;                
+        IniSaved<System.Xml.IniSavedSample.SampleConfig>.customHeaderLine = "Original at https://github.com/dkxce/INISaved";                
+        System.Xml.IniSavedSample.SampleConfig CONFIG = new System.Xml.IniSavedSample.SampleConfig();
+        string iniData = IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save(CONFIG);
+        IniSaved<System.Xml.IniSavedSample.SampleConfig>.Save("sample.ini", CONFIG);
+    };
 
-    public class SubConfig
+    // Read CONFIG
     {
-        [XmlAttribute]
-        public string key;
-        [XmlText]
-        public string value;
-    }
-...
-
-        Config cfg_save = new Config();
-        IniSaved<Config>.Save(Path.Combine(IniSaved<int>.CurrentDirectory(), "Config.ini"), cfg_save);
-        Config cfg_load = IniSaved<Config>.Load(Path.Combine(IniSaved<int>.CurrentDirectory(), "Config.ini"),);
-
+        System.Xml.IniSavedSampleBlank.SampleConfig CONFIG = new System.Xml.IniSavedSampleBlank.SampleConfig();
+        CONFIG = IniSaved<System.Xml.IniSavedSampleBlank.SampleConfig>.Load("sample.ini");
+    };
 ...
 ```
 
-**Sample**:
+**Short Sample**:
 ```ini
 ;
 ;IniSaved File UTF-8
+;Original at https://github.com/dkxce/INISaved
 ;[section]
 ;@attr|param=value
 ;@ -> \u0040, ; -> \u003B, # -> \u0023, \r -> \u000D, \n -> \u000A
 ;
 
-[Config]
-name=Config public string name
-intval=10128
-data=Af8=
-boolval=false
-
-[Config.sub]
-@key=SubConfig public string key
-@=SubConfig public string value
+[DEFAULT]
+Name=SampleConfiguration
+Age=18
+BirthDay=2023-06-27T00:00:00+03:00
+Weight=101
+Length=777
+Man=true
+aBytes=ARD/Cg3NOyM=
 ```
+**Full Sample**:    
+- [CONFIG](IniSavedSample.cs)
+- [INIFile](sample.ini)
+- [INIFile+XML](sample_with_xml.ini)
+- [XML](sample.xml)
